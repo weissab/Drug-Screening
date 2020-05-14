@@ -128,9 +128,9 @@ def main():
 
     print("The volume of each drug to be added per mixture is %s" % base_volume)
 
-    dilution_volumes_stock.to_csv('dilution_volumes_stock.csv')
-    dilution_volumes_medium.to_csv('dilution_volumes_medium.csv')
-    mixture_medium.to_csv('mixture_medium.csv')
+    dilution_volumes_stock.to_csv('output\dilution_volumes_stock.csv')
+    dilution_volumes_medium.to_csv('output\dilution_volumes_medium.csv')
+    mixture_medium.to_csv('output\mixture_medium.csv')
 
 
 if __name__ == '__main__':
