@@ -1,6 +1,7 @@
 import sys
 import pandas as pd
 import numpy as np
+import os
 
 
 def usage():
@@ -128,6 +129,7 @@ def main():
 
     print("The volume of each drug to be added per mixture is %s" % base_volume)
 
+    os.mkdir('output')
     dilution_volumes_stock.to_csv('output\dilution_volumes_stock.csv')
     dilution_volumes_medium.to_csv('output\dilution_volumes_medium.csv')
     mixture_medium.to_csv('output\mixture_medium.csv')
